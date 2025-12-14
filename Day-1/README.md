@@ -16,11 +16,11 @@ The die represents the entire silicon area of the chip and defines its physical 
 ## RISC-V SoC Overview
 
 A RISC-V SoC typically consists of components such as:
-SRAM
-SoC logic
-ADC
-DAC
-SPI
+- SRAM
+- SoC logic
+- ADC
+- DAC
+- SPI
 
 These components are referred to as Foundry IPs. Chip fabrication depends on the foundry, where processes such as deposition and lithography are used.
 ![D1](Images/d1.png)
@@ -112,26 +112,32 @@ In 2020, Google released the Sky130 open-source PDK using SkyWater technology.Ev
 ![D4](Images/d4.png)
 
 **Step 1: Synthesis**
+
 RTL is converted into a gate-level netlist using standard cell libraries.
 
 **Step 2: Floorplanning & Power Planning**
+
 - Defines die and core dimensions
 - Places I/O pads
 - Builds power grid (VDD & GND)
 - Uses upper metal layers to reduce resistance and EM issues
 
 **Step 3: Placement**
+
 - Global Placement: Approximate cell positioning
 - Detailed Placement: Exact legal placement and optimization
 
 **Step 4: Clock Tree Synthesis (CTS)**
+
 - Distributes the clock signal evenly to minimize skew.
 
 **Step 5: Routing**
+
 - Global Routing: Routing guides
 - Detailed Routing: Final wire connections
 
 **Step 6: Sign-Off**
+
 - Physical Verification: Design rule checking of the final layout.
 - Timing Verification: Static Timing Analysis is performed.
 
@@ -146,11 +152,13 @@ OpenLANE is an automated RTL-to-GDSII flow composed of multiple open-source tool
 6.KLayout
 
 **OpenLANE Goals:**
+
 - No human intervention
 - Clean GDSII output
 - Zero DRC, LVS, and timing violations
 
 **OpenLANE is optimized for the Sky130 PDK and supports both:**
+
 - Interactive mode
 - Automated mode
 
@@ -159,6 +167,7 @@ OpenLANE is an automated RTL-to-GDSII flow composed of multiple open-source tool
 ![D5](Images/d5.png)
 
 **Key Stages:**
+
 1.Floorplanning & Power Planning
 2.Tap Cell & Decap Insertion
 3.Placement & Optimization
@@ -179,6 +188,7 @@ Solutions:
 OpenLANE automatically inserts fake diodes during placement and replaces them if violations are detected.
 
 **Static Timing Analysis (STA)**
+
 - RC extraction using DEF2SPEF
 - Timing analysis using OpenSTA
 - Reports setup/hold violations
