@@ -8,7 +8,7 @@
 Pads are used to transfer signals between the external environment and the internal circuitry of the chip.
 
 
-![Screenshot 16-02-46](Day-1/Images/d1.png)
+![D1](Images/d1.png)
 
 
 
