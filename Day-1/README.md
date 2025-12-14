@@ -9,7 +9,7 @@ Pads are used to transfer signals between the external environment and the inter
 
 
 ![Screenshot 16-02-46](Day-1/Images/d1.png)
-![a1](Images/d1.png)
+
 
 
 
