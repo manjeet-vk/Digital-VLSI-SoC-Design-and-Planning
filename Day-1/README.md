@@ -4,13 +4,13 @@
 ## Introduction to Chip Design
 ## Chip Components
 
-**Pads**
+**1.Pads**
 Pads are used to transfer signals between the external environment and the internal circuitry of the chip.
 
-**Core**
+**2.Core**
 The core is the region where all standard cells and logic gates are placed and interconnected.
 
-**Die**
+**3.Die**
 The die represents the entire silicon area of the chip and defines its physical size.
 
 ## RISC-V SoC Overview
