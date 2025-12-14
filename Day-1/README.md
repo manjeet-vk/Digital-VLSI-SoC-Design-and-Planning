@@ -262,10 +262,10 @@ A run directory is created
 
 `temp``/merged.lef` contains layout info
 
-`Reports` stored under reports/
+`Reports` stored under `reports/`
 
-`Results`
- stored under results/
+`Results` stored under `results/`
+
 
 
 Run Synthesis:To start synthesis, run the command
