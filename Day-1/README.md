@@ -22,7 +22,8 @@ DAC
 SPI
 **
 These components are referred to as Foundry IPs. Chip fabrication depends on the foundry, where processes such as deposition and lithography are used.
-![Screenshot 16-02-46](Day-1/Images/Screenshot 2025-12-14 215311.png)
+[Screenshot 16-02-46](Day-1/Images/Screenshot 2025-12-14 215311.png)
+![a1](Images/Screenshot 2025-12-14 215311.png)
 
 📗 Introduction to RISC-V
 
