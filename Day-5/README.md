@@ -1,57 +1,45 @@
-## Day 5: Power Planning, Routing, and GDSII Generation
-
+# Day 5: Power Planning, Routing, and GDSII Generation
 ## Overview
-The final day of the workshop focused on completing the physical design flow by generating the Power Distribution Network (PDN), performing routing, validating timing after routing, and producing the final GDSII file for fabrication. This stage marks the transition from design implementation to tape-out readiness.
 
----
+The final day of the workshop focused on completing the physical design flow by implementing the Power Distribution Network (PDN), performing routing, validating post-route timing, and generating the final GDSII file for fabrication. This stage represents the transition from design implementation to tape-out readiness.
 
-## Power Distribution Network in OpenLANE
+## Power Distribution Network (PDN) in OpenLANE
+## Purpose of PDN
 
-## Role of PDN
-A Power Distribution Network ensures reliable delivery of power and ground to every standard cell and macro within the chip. A well-designed PDN minimizes voltage drop, improves signal integrity, and enhances overall chip stability.
+The Power Distribution Network is responsible for delivering stable power and ground connections to all standard cells and macros across the chip. An efficient PDN minimizes IR drop, enhances signal integrity, and ensures reliable circuit operation.
 
-The PDN primarily distributes:
-- VDD (power)
-- VSS (ground)
+The PDN distributes:
 
-across the core using rails and straps.
+## VDD (power)
 
----
+## VSS (ground)
+
+across the core area using power rails and metal straps.
 
 ## PDN Generation Flow
+## Execution of gen_pdn
 
-## gen_pdn Execution
-OpenLANE provides the `gen_pdn` procedure to automatically generate the power grid. This step constructs horizontal and vertical power rails and connects them to all power pins in the design.
+OpenLANE provides the gen_pdn command to automatically generate the power grid. This step creates horizontal and vertical power rails and connects them to the power pins of all cells in the design.
 
-The PDN stage relies on predefined technology and library information to maintain compatibility with the routing and placement stages.
-
----
+PDN generation relies on predefined technology and library data to ensure compatibility with placement and routing stages.
 
 ## PDN Configuration Dependencies
-
 ## Required Variables
-Before executing PDN generation, certain configuration variables must be correctly defined.
+
+Before executing PDN generation, certain configuration variables must be correctly defined to avoid errors:
 
 ## LIB_SYNTH_COMPLETE
-This variable must be present in the `config.tcl` file.
-It is internally referenced by the PDN scripts to access complete synthesis libraries.
+This variable must be specified in the config.tcl file. It is required by the PDN scripts to reference the complete synthesis libraries.
 
 ## LEF_MERGED_UNPADDED
-This variable points to the merged LEF file without padding.
-It provides structural information required for power grid creation.
+This variable points to the merged LEF file without padding and provides essential layout information needed for power grid construction.
 
-Improper configuration of these variables may cause PDN generation to fail.
-
----
+Incorrect or missing definitions of these variables can result in PDN generation failures.
 
 ## Routing Stage
+## Preparation for Routing
 
-## Preparing for Routing
-Before initiating routing, key routing-related variables were inspected to confirm the current design state.
-
-
-
-
+Prior to starting the routing process, routing-related configuration variables were reviewed to ensure the design environment was correctly set up and ready for detailed routing.
 
 
 
