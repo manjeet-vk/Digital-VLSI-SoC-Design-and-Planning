@@ -61,11 +61,11 @@ Instructions act as the interface between software and hardware, allowing the pr
 
 To design a Digital ASIC, three essential elements are required:
 
-**RTL Design**
+**- RTL Design**
 
-**EDA Tools**
+**- EDA Tools**
 
-**PDK Data**
+**- PDK Data**
 
 **What is RTL Design?**
 
@@ -74,8 +74,11 @@ Register Transfer Level (RTL) describes digital circuits in terms of data flow b
 **Open-source RTL resources:**
 
 **1.librecores.org**
+
 **2.opencores.org**
+
 **3.github.com**
+
 
 **What are EDA Tools?**
 
@@ -95,7 +98,9 @@ PDK (Process Design Kit) acts as the interface between design and fabrication.
 It includes:
 
 **1.Design rules (DRC, LVS, REX)**
+
 **2.Standard cell libraries**
+
 **3.I/O libraries**
 
 In 2020, Google released the Sky130 open-source PDK using SkyWater technology.Even older nodes like 130 nm remain powerful:
