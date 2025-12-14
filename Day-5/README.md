@@ -1,4 +1,4 @@
-Day 5: Power Planning, Routing, and GDSII Generation
+## Day 5: Power Planning, Routing, and GDSII Generation
 
 ## Overview
 The final day of the workshop focused on completing the physical design flow by generating the Power Distribution Network (PDN), performing routing, validating timing after routing, and producing the final GDSII file for fabrication. This stage marks the transition from design implementation to tape-out readiness.
